@@ -4,15 +4,11 @@ public class RectIf extends MyFrame {
 		int x=30;
 		setColor(0,128,0);
 		int i;
-		for(i=0 ; i<9 ; i++) {
-			if(i>=4 && i<=7) {
-				fillRect(x,100,10,100);
+		for(i=0 ; i<10 ; i++) {
+				fillRect(x,x,10,100);
+				x+=20;
 			}
-			else {
-				fillRect(x,80,10,100);
-			}
-			x+=20;
+
 		}
 	}
 
-}
