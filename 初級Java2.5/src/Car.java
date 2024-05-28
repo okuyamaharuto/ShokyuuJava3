@@ -1,11 +1,10 @@
 
 public class Car {
 	int x,y,vx,vy;
-	public Car(int x,int y,int vx,int vy) {
+	public Car(int x,int y,int vx) {
 		this.x = x;
 		this.y = y;
 		this.vx = vx;
-		this.vy = vy;
 	}
 	public void draw(MyFrame frame) {
 		frame.fillOval(x,y,20,20);
@@ -15,6 +14,5 @@ public class Car {
 	}
 	public void move() {
 		x+=vx;
-		y+=vy;
 	}
 }
